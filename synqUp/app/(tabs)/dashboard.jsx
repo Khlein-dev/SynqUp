@@ -1,3 +1,4 @@
+import "../../global.css";
 import { ScrollView, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -56,7 +57,7 @@ export default function DashboardScreen() {
             {/* Header */}
             <Animated.View
                 entering={FadeInDown.duration(700)}
-                className="flex-row justify-between items-center mt-4"
+                className="flex-row justify-between items-center mt-4 "
             >
                 <View>
                     <ThemedText className="text-white text-4xl font-extrabold">
@@ -164,7 +165,7 @@ export default function DashboardScreen() {
                 entering={FadeInRight.delay(350).duration(700)}
                 className="mt-8"
             >
-                <ThemedText className="text-white text-2xl font-bold mb-4">
+                <ThemedText className="text-white text-2xl font-bold mb-4 ">
                     Tasks & Deadlines
                 </ThemedText>
 
